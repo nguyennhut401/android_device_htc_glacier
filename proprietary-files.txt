@@ -1,0 +1,78 @@
+# Executable files
+bin/akmd
+bin/awb_camera
+bin/lsc_camera
+bin/rmt_storage
+
+# Audio
+lib/libaudioalsa.so
+lib/libhtc_acoustic.so
+
+# Firmware
+etc/firmware/vidc_720p_command_control.fw
+etc/firmware/vidc_720p_h263_dec_mc.fw
+etc/firmware/vidc_720p_h264_dec_mc.fw
+etc/firmware/vidc_720p_h264_enc_mc.fw
+etc/firmware/vidc_720p_mp4_dec_mc.fw
+etc/firmware/vidc_720p_mp4_enc_mc.fw
+etc/firmware/vidc_720p_vc1_dec_mc.fw
+
+# Camera
+lib/hw/camera.default.so
+lib/libcameraface.so
+lib/libcamerapp.so
+lib/libgemini.so
+lib/libmmipl.so
+lib/libmmjpeg.so
+lib/liboemcamera.so
+lib/libOlaEngine.so
+lib/libposteffect.so
+
+# Chromatix
+lib/libchromatix_s5k4e1gx_default_video.so
+lib/libchromatix_s5k4e1gx_preview.so
+
+# WVM
+lib/drm/libdrmwvmplugin.so
+lib/libwvdrm_L3.so
+lib/libwvm.so
+lib/libWVStreamControlAPI_L3.so
+
+# CodeAurora
+lib/libv8.so
+lib/libmm-color-convertor.so
+lib/libmmosal.so
+lib/libmmparser.so
+lib/libmmparser_divxdrmlib.so
+lib/libDivxDrm.so
+lib/libqc-opt.so
+lib/libcneapiclient.so
+lib/libcneqmiutils.so
+lib/libdiag.so
+lib/libdnshostprio.so
+lib/libnetmonitor.so
+lib/libtcpfinaggr.so
+lib/pp_proc_plugin.so
+lib/qnet-plugin.so
+lib/tcp-connections.so
+
+# Graphics
+etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw
+etc/firmware/yamato_pfp.fw
+etc/firmware/yamato_pm4.fw
+lib/egl/egl.cfg
+lib/egl/eglsubAndroid.so
+lib/egl/libEGL_adreno200.so
+lib/egl/libGLESv1_CM_adreno200.so
+lib/egl/libGLESv2_adreno200.so
+lib/egl/libGLESv2S3D_adreno200.so
+lib/egl/libq3dtools_adreno200.so
+lib/libC2D2.so
+lib/libc2d2_z180.so
+lib/libgsl.so
+lib/libOpenVG.so
+lib/libsc-a2xx.so
+
+# Radio
+lib/libhtc_ril.so
