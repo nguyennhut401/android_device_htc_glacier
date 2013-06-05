@@ -39,9 +39,11 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/glacier/overlay
 PRODUCT_COPY_FILES += \
     device/htc/glacier/media/voicemail-conf.xml:system/etc/voicemail-conf.xml 
 
-# Bluetooth
+# Bluetooth and gps
 PRODUCT_COPY_FILES += \
-    device/htc/glacier/configs/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+    device/htc/glacier/configs/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
+    device/htc/glacier/configs/gps.conf:system/etc/gps.conf
+
 
 # Hal
 PRODUCT_PACKAGES += \
@@ -94,6 +96,6 @@ $(call inherit-product, device/htc/glacier/media_a1026.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
-PRODUCT_NAME := xylon_glacier
+PRODUCT_NAME := slim_glacier
 PRODUCT_DEVICE := glacier
-PRODUCT_MODEL := Xylon for Glacier
+PRODUCT_MODEL := slim for glacier

@@ -1,1 +1,1 @@
-add_lunch_combo ukg_glacier-userdebug
+add_lunch_combo slim_glacier-userdebug
