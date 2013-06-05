@@ -86,6 +86,11 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329
 PRODUCT_COPY_FILES += \
     device/htc/glacier/configs/vold.fstab:system/etc/vold.fstab
 
+# prebuilt
+PRODUCT_COPY_FILES += \
+    vendor/slim/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/slim/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+
 # Device specific props
 $(call inherit-product-if-exists, vendor/htc/glacier/device-vendor.mk)
 
