@@ -35,9 +35,6 @@ USE_CAMERA_STUB := true
 
 TARGET_BOOTLOADER_BOARD_NAME := glacier
 
-# Trackpad
-BOARD_USE_LEGACY_TRACKPAD := true
-
 # Camera
 BOARD_HAVE_HTC_FFC := true
 
