@@ -50,10 +50,9 @@ on boot
     # Power Management
     chmod 0664 /sys/module/pm/parameters/idle_sleep_mode
 
-    # Disable IPv6 over mobile radio
-#    write /proc/sys/net/ipv6/conf/rmnet0/disable_ipv6 1
-#    write /proc/sys/net/ipv6/conf/rmnet1/disable_ipv6 1
-#    write /proc/sys/net/ipv6/conf/rmnet2/disable_ipv6 1
+    # Device Settings
+    chown system system /sys/class/timed_output/vibrator/voltage_level
+    chown system system /sys/android_touch/sweep2wake
 
     # HTC SysFS for "Flip to Speaker"
     chown radio radio /sys/class/htc_accelerometer/accelerometer/PhoneOnOffFlag
