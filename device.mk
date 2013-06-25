@@ -45,10 +45,8 @@ PRODUCT_COPY_FILES += \
     device/htc/glacier/configs/gps.conf:system/etc/gps.conf
 
 
-# Hal
+# GPS
 PRODUCT_PACKAGES += \
-    lights.glacier \
-    sensors.glacier \
     gps.glacier
 
 # Keylayouts
