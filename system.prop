@@ -3,14 +3,7 @@
 #
 ro.sf.lcd_density=240
 
-debug.sf.hw=1
-debug.composition.type=dyn
-ro.sf.compbypass.enable=1
-dev.pm.dyn_samplingrate=1
-
-# Qcom build lub
 com.qc.hardware=true
-com.qc.hdmi_out=false
 
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
@@ -66,9 +59,3 @@ ro.ril.disable.power.collapse=1
 # USB mounting
 persist.sys.usb.config=mass_storage,adb
 persist.service.adb.enable=1
-
-# GooManger
-#ro.goo.developerid=coderzs
-#ro.goo.rom=ukg-glacier
-
-ro.vold.umsdirtyratio=50
