@@ -30,9 +30,6 @@ USE_CAMERA_STUB := true
 # Inherit from the proprietary version
 -include vendor/htc/glacier/BoardConfigVendor.mk
 
-# Inherit bcmdhd config
--include device/htc/msm7x30-common/bcmdhd.mk
-
 TARGET_BOOTLOADER_BOARD_NAME := glacier
 
 # Trackpad
@@ -40,20 +37,6 @@ BOARD_USE_LEGACY_TRACKPAD := true
 
 # Camera
 BOARD_HAVE_HTC_FFC := true
-
-# Lights
-TARGET_PROVIDES_LIBLIGHTS := true
-
-# Adreno
-BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
-
-# Audio
-BOARD_USES_QCOM_AUDIO_VOIPMUTE := false
-BOARD_USES_QCOM_AUDIO_RESETALL := false
-
-# GPS
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := glacier
-BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 1240
 
 # Kernel
 BOARD_KERNEL_CMDLINE := no_console_suspend=1
@@ -76,6 +59,10 @@ BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_NO_MISC_PARTITION := true
 
+# GPS
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := glacier
+BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 1240
+
 # Bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := device/htc/glacier/bluetooth/vnd_msm7x30.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/glacier/bluetooth/include
@@ -83,6 +70,3 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/glacier/bluetooth/incl
 # No SDK blobs
 BUILD_EMULATOR_SENSORS_MODULE := false
 BUILD_EMULATOR_GPS_MODULE := false
-
-BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun0/file
