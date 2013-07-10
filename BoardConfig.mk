@@ -42,8 +42,6 @@ BOARD_HAVE_HTC_FFC := true
 BOARD_KERNEL_CMDLINE := no_console_suspend=1
 BOARD_KERNEL_BASE := 0x04000000
 BOARD_KERNEL_PAGE_SIZE := 4096
-BUILD_KERNEL := true
-TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
 TARGET_KERNEL_CONFIG := evervolv_glacier_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
 
